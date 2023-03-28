@@ -1,0 +1,33 @@
+#chessboard {
+    display: grid;
+    grid-template-columns: repeat(8,80px);
+    grid-template-rows: repeat(8,80px);
+    width: 640px;
+    height: 640px;
+    background-color: purple;
+}
+.white-tile {
+    display: grid;
+    place-content: center;
+    background-color: white;
+    height: 80px;
+    width: 80px;
+}
+.black-tile {
+    display: grid;
+    place-content: center;
+    height: 80px;
+    width: 80px;
+}
+.chess-piece {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.chess-piece:hover {
+    cursor: grab;
+}
+.chess-piece:active {
+    cursor: grabbing;
+}
